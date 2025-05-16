@@ -1,31 +1,17 @@
-import Navbar from './Navbar'
-import Home from './Home'
-import { BrowserRouter  as Router,Route,Routes} from 'react-router-dom';
-import Create from './Create';
-import BlogDetails from './BlogDetail';
-import Notfound from './Notfound';
+import React from 'react'
+import MouseContainer from './components/MouseContainer'
+// import HookCounter from './components/HookCounter'
+// import CounterOne from './components/CounterOne'
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <div className="App">
 
-        <Navbar/>
+    // <HookCounter/>
+    
+    // <CounterOne/>
 
-        <div className="content">
-          <Routes>
-
-            <Route exact path="/" element={<Home/>}/>
-            <Route path="/create" element={<Create/>}/>
-            <Route path="/blogs/:id" element={<BlogDetails />} />
-            <Route path="*" element={<Notfound/>}/>
-
-          </Routes>
-        </div>
-
-        </div>
-    </Router>
-  );
+    <MouseContainer/>
+  )
 }
 
-export default App;
+export default App
