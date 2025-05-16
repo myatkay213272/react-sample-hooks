@@ -1,6 +1,7 @@
 import React from 'react'
-import MouseContainer from './components/MouseContainer'
-import IntervalHookCounter from './components/IntervalHookCounter'
+import DataFetching from './components/DataFetching'
+// import MouseContainer from './components/MouseContainer'
+// import IntervalHookCounter from './components/IntervalHookCounter'
 // import HookCounter from './components/HookCounter'
 // import CounterOne from './components/CounterOne'
 
@@ -13,7 +14,8 @@ const App = () => {
 
     // <MouseContainer/>
 
-    <IntervalHookCounter prop="Hello world"/>
+    // <IntervalHookCounter prop="Hello world"/>
+    <DataFetching/>
   )
 }
 
